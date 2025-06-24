@@ -1,9 +1,10 @@
 package chardet
 
 import (
-	"github.com/wlynxg/chardet/consts"
-	"github.com/wlynxg/chardet/probe"
 	"sort"
+
+	"github.com/joshtechnologygroup/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/probe"
 )
 
 // Detect the encoding of the given byte string.

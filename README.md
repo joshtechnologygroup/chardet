@@ -1,9 +1,10 @@
 <div align=center>
 
 ## chardet: Go character encoding detector
-[![Go Reference](https://pkg.go.dev/badge/github.com/wlynxg/chardet.svg)](https://pkg.go.dev/github.com/wlynxg/chardet)
-[![License](https://img.shields.io/github/license/wlynxg/chardet.svg?style=flat)](https://github.com/wlynxg/chardet)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wlynxg/chardet)](https://goreportcard.com/report/github.com/wlynxg/chardet)
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/joshtechnologygroup/chardet.svg)](https://pkg.go.dev/github.com/joshtechnologygroup/chardet)
+[![License](https://img.shields.io/github/license/wlynxg/chardet.svg?style=flat)](https://github.com/joshtechnologygroup/chardet)
+[![Go Report Card](https://goreportcard.com/badge/github.com/joshtechnologygroup/chardet)](https://goreportcard.com/report/github.com/joshtechnologygroup/chardet)
 
 </div>
 
@@ -18,7 +19,7 @@ chardet is a character encoding detector library written in Go. It helps you aut
 To install chardet, use `go get`:
 
 ```bash
-go get github.com/wlynxg/chardet
+go get github.com/joshtechnologygroup/chardet
 ```
 
 ## Supported Encodings & Languages
@@ -78,6 +79,7 @@ go get github.com/wlynxg/chardet
 </details>
 
 **Support Languages**:
+
 <details>
 <summary>Expand the list of supported languages</summary>
 - Chinese
@@ -103,13 +105,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/wlynxg/chardet"
+	"github.com/joshtechnologygroup/chardet"
 )
 
 func main() {
 	data := []byte("Your text data here...")
 	result := chardet.Detect(data)
-	fmt.Printf("Detected result: %+v\n", result) 
+	fmt.Printf("Detected result: %+v\n", result)
     //Output: Detected result: {Encoding:Ascii Confidence:1 Language:}
 }
 ```
@@ -117,12 +119,13 @@ func main() {
 ## Advanced Usage
 
 For handling large amounts of text, you can use the detector incrementally. This allows the detector to stop as soon as it reaches sufficient confidence in its result.
+
 ```go
 package main
 
 import (
 	"fmt"
-	"github.com/wlynxg/chardet"
+	"github.com/joshtechnologygroup/chardet"
 )
 
 func main() {
@@ -143,13 +146,14 @@ func main() {
 ## Processing Multiple Files
 
 You can reuse the same detector instance for multiple files by using the `Reset()` method:
+
 ```go
 package main
 
 import (
 	"fmt"
 	"os"
-	"github.com/wlynxg/chardet"
+	"github.com/joshtechnologygroup/chardet"
 )
 
 func main() {

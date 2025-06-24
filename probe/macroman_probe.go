@@ -3,7 +3,7 @@ package probe
 import (
 	"math"
 
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 type MacRomanProbe struct {

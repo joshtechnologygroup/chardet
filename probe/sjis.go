@@ -3,8 +3,8 @@ package probe
 import (
 	"math"
 
-	"github.com/wlynxg/chardet/cda"
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/cda"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 type SJISProbe struct {
@@ -56,7 +56,7 @@ loop:
 				s.contextAnalyzer.Feed(s.lastChar[2-charLen:], charLen)
 				s.distributionAnalyzer.Feed(s.lastChar[:], charLen)
 			} else {
-				// fix https://github.com/wlynxg/chardet/issues/4
+				// fix https://github.com/joshtechnologygroup/chardet/issues/4
 				if i+1-charLen >= len(buf) || i+3-charLen >= cap(buf) {
 					break loop
 				}

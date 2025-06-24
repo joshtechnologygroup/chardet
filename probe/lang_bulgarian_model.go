@@ -1,7 +1,7 @@
 package probe
 
 import (
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 var bulgarianLangModel = map[int]map[int]int{

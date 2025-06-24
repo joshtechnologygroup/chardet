@@ -3,7 +3,7 @@ package probe
 import (
 	"bytes"
 
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 type CharSetProbe struct {

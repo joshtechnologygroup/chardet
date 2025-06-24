@@ -3,8 +3,8 @@ package chardet
 import (
 	"bytes"
 
-	"github.com/wlynxg/chardet/consts"
-	"github.com/wlynxg/chardet/probe"
+	"github.com/joshtechnologygroup/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/probe"
 )
 
 // Result represents the character encoding detection result
