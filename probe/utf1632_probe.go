@@ -1,8 +1,9 @@
 package probe
 
 import (
+	"math"
+
 	"github.com/wlynxg/chardet/consts"
-	"github.com/wlynxg/chardet/util"
 )
 
 type UTF1632Probe struct {
@@ -79,11 +80,11 @@ func (u *UTF1632Probe) Language() string {
 }
 
 func (u *UTF1632Probe) approx32bitChars() float64 {
-	return util.Max(1.0, float64(u.position)/4.0)
+	return math.Max(1.0, float64(u.position)/4.0)
 }
 
 func (u *UTF1632Probe) approx16bitChars() float64 {
-	return util.Max(1.0, float64(u.position)/2.0)
+	return math.Max(1.0, float64(u.position)/2.0)
 }
 
 func (u *UTF1632Probe) isLikelyUtf32be() bool {
