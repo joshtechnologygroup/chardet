@@ -3,6 +3,7 @@ package probe
 import (
 	"github.com/wlynxg/chardet/cda"
 	"github.com/wlynxg/chardet/consts"
+	"github.com/wlynxg/chardet/util"
 )
 
 type EUCJPProbe struct {
@@ -65,5 +66,5 @@ loop:
 }
 
 func (e *EUCJPProbe) GetConfidence() float64 {
-	return max(e.contextAnalyzer.GetConfidence(), e.distributionAnalyzer.GetConfidence())
+	return util.Max(e.contextAnalyzer.GetConfidence(), e.distributionAnalyzer.GetConfidence())
 }

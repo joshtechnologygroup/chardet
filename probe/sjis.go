@@ -3,6 +3,7 @@ package probe
 import (
 	"github.com/wlynxg/chardet/cda"
 	"github.com/wlynxg/chardet/consts"
+	"github.com/wlynxg/chardet/util"
 )
 
 type SJISProbe struct {
@@ -75,5 +76,5 @@ loop:
 }
 
 func (s *SJISProbe) GetConfidence() float64 {
-	return max(s.contextAnalyzer.GetConfidence(), s.distributionAnalyzer.GetConfidence())
+	return util.Max(s.contextAnalyzer.GetConfidence(), s.distributionAnalyzer.GetConfidence())
 }
