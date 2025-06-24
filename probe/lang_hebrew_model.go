@@ -1,7 +1,7 @@
 package probe
 
 import (
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 func NewWindows1255HebrewModel() *SingleByteCharSetModel {

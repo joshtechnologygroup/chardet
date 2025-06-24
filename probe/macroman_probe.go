@@ -1,7 +1,9 @@
 package probe
 
 import (
-	"github.com/wlynxg/chardet/consts"
+	"math"
+
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 type MacRomanProbe struct {
@@ -120,6 +122,6 @@ func (m *MacRomanProbe) GetConfidence() float64 {
 	if float64(total) < 0.01 {
 		confidence = 0.0
 	}
-	confidence = max(confidence, 0.0) * 0.73
+	confidence = math.Max(confidence, 0.0) * 0.73
 	return confidence
 }

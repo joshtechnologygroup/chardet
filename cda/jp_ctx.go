@@ -1,7 +1,7 @@
 package cda
 
 import (
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 type JapaneseContextAnalysis struct {

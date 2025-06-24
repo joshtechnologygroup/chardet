@@ -1,8 +1,8 @@
 package probe
 
 import (
-	"github.com/wlynxg/chardet/cda"
-	"github.com/wlynxg/chardet/consts"
+	"github.com/joshtechnologygroup/chardet/cda"
+	"github.com/joshtechnologygroup/chardet/consts"
 )
 
 type JOHABProbe struct {

@@ -1,3 +1,3 @@
-module github.com/wlynxg/chardet
+module github.com/joshtechnologygroup/chardet
 
-go 1.23.0
+go 1.20

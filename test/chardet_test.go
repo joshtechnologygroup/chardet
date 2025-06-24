@@ -2,10 +2,11 @@ package chrdet_test
 
 import (
 	"encoding/json"
-	"github.com/wlynxg/chardet"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/joshtechnologygroup/chardet"
 )
 
 type PythonResult struct {
