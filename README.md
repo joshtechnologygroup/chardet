@@ -2,9 +2,9 @@
 
 ## chardet: Go character encoding detector
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/joshtechnologygroup/chardet.svg)](https://pkg.go.dev/github.com/joshtechnologygroup/chardet)
-[![License](https://img.shields.io/github/license/wlynxg/chardet.svg?style=flat)](https://github.com/joshtechnologygroup/chardet)
-[![Go Report Card](https://goreportcard.com/badge/github.com/joshtechnologygroup/chardet)](https://goreportcard.com/report/github.com/joshtechnologygroup/chardet)
+[![Go Reference](https://pkg.go.dev/badge/github.com/wlynxg/chardet.svg)](https://pkg.go.dev/github.com/wlynxg/chardet)
+[![License](https://img.shields.io/github/license/wlynxg/chardet.svg?style=flat)](https://github.com/wlynxg/chardet)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wlynxg/chardet)](https://goreportcard.com/report/github.com/wlynxg/chardet)
 
 </div>
 
